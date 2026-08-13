@@ -884,18 +884,6 @@ llama.cpp_SOURCE_DIR:STATIC=C:/Users/Cookiw/Project/open-flow/extern/llama.cpp
 parakeet_LIB_DEPENDS:STATIC=general;ggml;general;Threads::Threads;
 
 //Value Computed by CMake
-uiohook_BINARY_DIR:STATIC=C:/Users/Cookiw/Project/open-flow/build/extern/libuiohook
-
-//Value Computed by CMake
-uiohook_IS_TOP_LEVEL:STATIC=OFF
-
-//Dependencies for the target
-uiohook_LIB_DEPENDS:STATIC=general;Advapi32;
-
-//Value Computed by CMake
-uiohook_SOURCE_DIR:STATIC=C:/Users/Cookiw/Project/open-flow/extern/libuiohook
-
-//Value Computed by CMake
 whisper.cpp_BINARY_DIR:STATIC=C:/Users/Cookiw/Project/open-flow/build/extern/whisper.cpp
 
 //Value Computed by CMake
