@@ -6,10 +6,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_subdirectory(extern/whisper.cpp)
-
 add_subdirectory(extern/llama.cpp)
-
+add_subdirectory(extern/whisper.cpp)
 add_subdirectory(extern/libuiohook)
 
 include_directories(
@@ -28,8 +26,8 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
 )
 
 if (APPLE)
-    find_library(CORE_AUDIO CoreAudio)
-    find_library(AUDIO_TOOLBOX AudioToolbox)
-    find_library(CORE_GRAPHICS CoreGraphics)
-    target_link_libraries(${PROJECT_NAME} PRIVATE ${CORE_AUDIO} ${AUDIO_TOOLBOX} ${CORE_GRAPHICS})
+  find_library(CORE_AUDIO CoreAudio)
+  find_library(AUDIO_TOOLBOX AudioToolbox)
+  find_library(CORE_GRAPHICS CoreGraphics)
+  target_link_libraries(${PROJECT_NAME} PRIVATE ${CORE_AUDIO} ${AUDIO_TOOLBOX} ${CORE_GRAPHICS})
 endif()

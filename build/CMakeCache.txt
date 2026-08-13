@@ -445,7 +445,7 @@ GGML_CUDA_FORCE_CUBLAS:BOOL=OFF
 GGML_CUDA_FORCE_MMQ:BOOL=OFF
 
 //ggml: use CUDA graphs (llama.cpp only)
-GGML_CUDA_GRAPHS:BOOL=OFF
+GGML_CUDA_GRAPHS:BOOL=ON
 
 //ggml: use NVIDIA Collective Comm. Library
 GGML_CUDA_NCCL:BOOL=ON
@@ -505,7 +505,7 @@ GGML_LASX:BOOL=ON
 GGML_LIB_INSTALL_DIR:PATH=lib
 
 //ggml: use LLAMAFILE
-GGML_LLAMAFILE:BOOL=OFF
+GGML_LLAMAFILE:BOOL=ON
 
 //ggml: enable lsx
 GGML_LSX:BOOL=ON
@@ -584,6 +584,15 @@ GGML_RV_ZVFBFWMA:BOOL=OFF
 
 //ggml: enable riscv zvfh
 GGML_RV_ZVFH:BOOL=ON
+
+//ggml: enable address sanitizer
+GGML_SANITIZE_ADDRESS:BOOL=OFF
+
+//ggml: enable thread sanitizer
+GGML_SANITIZE_THREAD:BOOL=OFF
+
+//ggml: enable undefined sanitizer
+GGML_SANITIZE_UNDEFINED:BOOL=OFF
 
 //Path to a program.
 GGML_SCCACHE_FOUND:FILEPATH=GGML_SCCACHE_FOUND-NOTFOUND
@@ -863,13 +872,13 @@ WHISPER_USE_SYSTEM_GGML:BOOL=OFF
 ZENDNN_ROOT:BOOL=OFF
 
 //Value Computed by CMake
-ggml_BINARY_DIR:STATIC=C:/Users/Cookiw/Project/open-flow/build/extern/whisper.cpp/ggml
+ggml_BINARY_DIR:STATIC=C:/Users/Cookiw/Project/open-flow/build/extern/llama.cpp/ggml
 
 //Value Computed by CMake
 ggml_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-ggml_SOURCE_DIR:STATIC=C:/Users/Cookiw/Project/open-flow/extern/whisper.cpp/ggml
+ggml_SOURCE_DIR:STATIC=C:/Users/Cookiw/Project/open-flow/extern/llama.cpp/ggml
 
 //Value Computed by CMake
 llama.cpp_BINARY_DIR:STATIC=C:/Users/Cookiw/Project/open-flow/build/extern/llama.cpp
@@ -882,6 +891,18 @@ llama.cpp_SOURCE_DIR:STATIC=C:/Users/Cookiw/Project/open-flow/extern/llama.cpp
 
 //Dependencies for the target
 parakeet_LIB_DEPENDS:STATIC=general;ggml;general;Threads::Threads;
+
+//Value Computed by CMake
+uiohook_BINARY_DIR:STATIC=C:/Users/Cookiw/Project/open-flow/build/extern/libuiohook
+
+//Value Computed by CMake
+uiohook_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+uiohook_LIB_DEPENDS:STATIC=general;Advapi32;
+
+//Value Computed by CMake
+uiohook_SOURCE_DIR:STATIC=C:/Users/Cookiw/Project/open-flow/extern/libuiohook
 
 //Value Computed by CMake
 whisper.cpp_BINARY_DIR:STATIC=C:/Users/Cookiw/Project/open-flow/build/extern/whisper.cpp
